@@ -59,11 +59,11 @@ md-sidenav md-list {
     vertical-align: middle;
     zoom: 0.70;
     transform: translateZ(0);
-    -webkit-transform: scale(0.70);
+    -webkit-transform: scale(0.70) translateZ(0);
     -moz-transform: scale(0.70);
 }
 
-.scrollable-nav-conent {
+.scrollable-nav-content {
 	position: absolute;
 	top: 136px;
 	bottom: 0px;
@@ -76,4 +76,8 @@ span.name {
 	font-weight: bold;
 	font-size: 1.1em;
 	padding-left: 5px;
+}
+
+.date-row {
+    margin: 16px 0px;
 }

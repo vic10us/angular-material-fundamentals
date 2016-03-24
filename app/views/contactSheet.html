@@ -4,7 +4,7 @@
 	</md-subheader>
 	<md-list>
 		<md-item ng-repeat="item in cp.actions">
-			<md-button ng-click="cp.submitContact(item)" id="item_{{$index}}">
+			<md-button ng-click="cp.submitContact(item)" id="item_{{$index}}" aria-label="Add Contact">
 				<md-icon md-svg-icon="{{item.icon}}" ></md-icon>
 				<span ng-bind="item.name"></span>
 			</md-button>

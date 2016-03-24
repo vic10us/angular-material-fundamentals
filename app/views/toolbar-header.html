@@ -1,6 +1,6 @@
 <md-toolbar>
 	<div class="md-toolbar-tools">
-	  <md-button hide-gt-sm class="md-icon-button" ng-click="vm.toggleSidenav()">
+	  <md-button hide-gt-sm class="md-icon-button" ng-click="vm.toggleSideNav()" aria-label="Menu">
 	    <md-icon md-svg-icon="menu"></md-icon>
 	  </md-button>
 	  <h1>Contact Manager</h1>
@@ -8,13 +8,15 @@
 	  	md-direction="down" 
   		class="md-fling md-fab-top-right">
 			<md-fab-trigger>
-				<md-button class="md-fab">
+				<md-button class="md-fab"
+                           aria-label="Menu">
 					<md-icon md-svg-icon="menu"></md-icon>
 				</md-button>
 			</md-fab-trigger>
 			<md-fab-actions>
 				<md-button class="md-fab md-raised md-mini"
-					ng-click="vm.showContactOptions($event)">
+                           ng-click="vm.showContactOptions($event)"
+                           aria-label="Contact">
 					<ng-md-icon icon="face"></ng-md-icon>
 					<md-tooltip md-direction="left">
 					  Contact
@@ -22,9 +24,10 @@
 				</md-button>
 				<md-button 
 					class="md-fab md-raised md-mini"
-					ng-click="vm.clearNotes($event)">
+					ng-click="vm.clearNotes($event)"
+                    aria-label="Clear All">
 					<ng-md-icon 
-						icon="clear">
+						icon="clear_all">
 					</ng-md-icon>
 					<md-tooltip md-direction="left">
 					  Clear All Notes

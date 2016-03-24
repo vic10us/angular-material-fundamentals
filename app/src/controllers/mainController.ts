@@ -32,6 +32,7 @@ module ContactManagerApp {
         newNote: Note = new Note('', null);
         
         toggleSideNav() : void {
+            console.log('clicked me');
             this.$mdSidenav('left').toggle();
         }
         

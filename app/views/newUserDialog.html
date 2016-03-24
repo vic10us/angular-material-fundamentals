@@ -54,11 +54,12 @@
 			</div>
 		</md-dialog-content>
 		<md-dialog-actions layout="row">
-			<md-button ng-click="ctrl.cancel()">Cancel</md-button>
+			<md-button ng-click="ctrl.cancel()" aria-label="Cancel">Cancel</md-button>
 			<md-button 
 				type="submit" 
 				class="md-primary md-raised"
-				ng-disabled="userForm.$invalid">Save</md-button>
+				ng-disabled="userForm.$invalid"
+                aria-label="Save">Save</md-button>
 		</md-dialog-actions>
 	</form>
 </md-dialog>

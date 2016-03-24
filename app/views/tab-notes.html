@@ -11,7 +11,7 @@
 			<p ng-bind="note.date | date: 'MM/dd/yyyy'"></p>
 		</md-card-content>
 		<md-card-actions layout="row" layout-align="end center">
-			<md-button ng-click="vm.removeNote(note)">Remove</md-button>
+			<md-button ng-click="vm.removeNote(note)" aria-label="Remove">Remove</md-button>
 		</md-card-actions>
 	</md-card>
 </md-content>
