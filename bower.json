@@ -1,0 +1,22 @@
+{
+  "name": "ang-mat-demo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Keith A. Hill <khill@acquisio.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.0.6",
+    "angular-material-icons": "^0.7.0"
+  }
+}
