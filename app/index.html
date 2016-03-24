@@ -21,21 +21,21 @@
     
     <body layout="row" ng-cloak ng-controller="mainController as vm">
         
-        <div ng-include="'dist/views/sidenav.html'" layout="vertical"></div>      
+        <div ng-include="'views/sidenav.html'" layout="vertical"></div>      
 
         <div layout="column" flex id="wrapper">
-            <div ng-include="'dist/views/toolbar-header.html'"></div>
+            <div ng-include="'views/toolbar-header.html'"></div>
             <md-content flex id="content">
-                <div ng-include="'dist/views/main-content.html'"></div>
+                <div ng-include="'views/main-content.html'"></div>
                 
                 <md-tabs md-dynamic-height=""
                          md-stretch-tabs="always"
                          md-selected="vm.tabIndex">
                     <md-tab label="Bio">
-                        <div ng-include="'dist/views/tab-bio.html'"></div>
+                        <div ng-include="'views/tab-bio.html'"></div>
                     </md-tab>
                     <md-tab label="Notes">
-                        <div ng-include="'dist/views/tab-notes.html'"></div>
+                        <div ng-include="'views/tab-notes.html'"></div>
                     </md-tab>
                 </md-tabs>
                 
